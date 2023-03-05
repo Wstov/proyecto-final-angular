@@ -1,0 +1,78 @@
+<section class="creditos">
+    <div class="contenido">
+
+        <div class="position card text-center">
+            <div class="card-header">
+                Información del Creador
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Hola que tal!</h5>
+                <p class="card-text">Bienvenido a esta sección, oprime el botón <strong>Desplegar</strong> para ver la
+                    información del desarrollador de esta web y las herramientas utilizadas.</p>
+                    <p>Si desea regresar a la pagina de inicio precione Proyecto Final</p>
+                <a (click)="desplegar()" class="btn btn-primary">Desplegar</a>
+            </div>
+
+            <div *ngIf="desplegaInformacion">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../assets/img/pexels-tomé-louro-1666779.jpg" class="img-fluid rounded-start"
+                                alt="imagen">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Marvin Gustavo Marín Lazo</h5>
+                                <p class="card-text"></p>
+                                <div class="card">
+
+                                    <div class="accordion" id="accordionExample">
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Información de Contacto
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <ul class="list-group list-group-flush">
+                                                    <li *ngFor="let info of informacion; let i  = index"
+                                                        class="list-group-item ">
+                                                        {{info}}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Herramientas Utilizadas
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <ul class="list-group list-group-flush">
+                                                    <li *ngFor="let herramienta of herramientas; let i  = index"
+                                                        class="list-group-item ">
+                                                        {{i+1}}- {{herramienta}}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,39 @@
+<div id="carouselExampleCaptions" class="carousel slide principal" data-bs-ride="false">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../../assets/img/wallhaven-4dzp9g.jpg" class="d-block w-100" alt="imagen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Fraces de Motivación</h5>
+                <p>Acá encontraras frases motivacionales de autores importantes de la historia.</p>
+                <a [routerLink]="['frases']">Acceder</a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="../../assets/img/wallhaven-47q18e.jpg" class="d-block w-100" alt="imagen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Créditos</h5>
+                <p>Algunos datos de la persona que creo la página</p>
+                <a [routerLink]="['creditos']">Acceder</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>

@@ -1,0 +1,19 @@
+
+
+.contenido-msj {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/img/wallhaven-lm85eq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.msj-card {
+    margin: 10% 25% 50%;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    padding: 3% 0;
+}

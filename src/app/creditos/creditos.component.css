@@ -1,0 +1,25 @@
+.creditos {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/img/wallhaven-7396g9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+
+}
+
+.contenido {
+
+    margin: 10% 25% 50%;
+}
+
+.card-body {
+    flex: 0;
+}
+
+
+.position {
+    display: flex;
+    justify-content: center;
+}

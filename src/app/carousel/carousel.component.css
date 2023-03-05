@@ -1,0 +1,33 @@
+.carousel-caption {
+    bottom: 60%;
+}
+
+h5 {
+    font-size: 3.5rem;
+    color: #242628;
+}
+
+p {
+    font-size: 2rem;
+    color: #242628;
+    font-weight: bold;
+}
+
+.carousel-caption a {
+    padding: 7px 30px;
+    font-family: var(--bs-body-font-family);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #242628;
+    color: #ced0d2;
+    text-decoration: none;
+
+    border-radius: 5px;
+    border: 2px;
+}
+
+.carousel-caption a:hover {
+    background-color: #ced0d2;
+    color: #242628;
+}
